@@ -2,10 +2,10 @@
 
 // Declarar as variaveis necessarias para gerar a minha conexão com o Banco de Dados...
 
-$hostname = "f30-preview.awardspace.net";
-$dbname = "3769094_pwyurip3";
-$username = "3769094_pwyurip3";
-$password = "3769094_pwyurip3";
+$hostname = "sql108.epizy.com";
+$dbname = "epiz_28839504_XXX";
+$username = "epiz_28839504";
+$password = "ptBdtnNrkKUDLR0";
 
 try {
     $pdo = new PDO('mysql:host='.$hostname.';dbname='.$dbname, $username, $password);
