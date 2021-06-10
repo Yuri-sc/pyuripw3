@@ -6,29 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento do sistema de biblioteca</title>
+    <script src="https://kit.fontawesome.com/b811d33229.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/fontAwesome/css/all.css">
     <link rel="stylesheet" href="libs/sweetAlert/dist/sweetalert2.css">
     <link rel="stylesheet" href="libs/DataTables/datatables.css">
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/admcss.css">
 </head>
 
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
-        <a class="navbar-brand text-white">Biblioteca</a>
-        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="my-nav" class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="src/eixo/view/list-eixo.html"><i class="fas fa-weixin"></i> Eixos Tecnológicos</a>
-                </li>
-            </ul>
+    <div class="navigation-wrap bg-light start-header start-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-md navbar-light">
+
+                        <a class="navbar-brand" href="" target=""><img src="img/logo2.png" alt=""></a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="src/eixo/view/list-eixo.html"></i> Eixos Tecnológicos</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="#">Outro</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="#">Algo</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="#">Outro</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
 
     <div class="container" id="conteudo">
         <div class="row justify-content-center mt-5">
@@ -37,10 +58,9 @@
             </div>
         </div>
     </div>
-
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="libs/sweetAlert/dist/sweetalert2.js"></script>
+    <script src="libs/sweetalert/dist/sweetalert2.js"></script>
     <script src="js/load-link.js"></script>
     <script src="libs/DataTables/datatables.js"></script>
 
