@@ -5,14 +5,14 @@ $(document).ready(function() {
         $('.modal-title').empty()
         $('.modal-body').empty()
 
-        $('.modal-title').append('Adicionar novo eixo tecnológico')
+        $('.modal-title').append('Adicionar novo tipo de usuário')
 
-        $('.modal-body').load('src/eixo/view/form-eixo.html')
+        $('.modal-body').load('src/tipo-usuario/view/form-tipo.html')
 
         $('.btn-save').show()
 
         $('.btn-save').attr('data-operation', 'insert')
 
-        $('#modal-eixo').modal('show')
+        $('#modal-tipo').modal('show')
     })
 })

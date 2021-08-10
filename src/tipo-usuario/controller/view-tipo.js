@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#eixo').on('click', 'button.btn-edit', function(e) {
+    $('#table-tipo').on('click', 'button.btn-view', function(e) {
 
         e.preventDefault()
 
@@ -9,25 +9,24 @@ $(document).ready(function() {
         $('.modal-title').empty()
         $('.modal-body').empty()
 
-        $('.modal-title').append('Edição de eixo tecnológico')
+        $('.modal-title').append('Visualização do tipo de usuário')
 
-        let IDEIXO = `IDEIXO=${$(this).attr('id')}`
+        let IDTIPO_USUARIO = `IDTIPO_USUARIO=${$(this).attr('id')}`
 
         $.ajax({
             type: 'POST',
             dataType: 'json',
             assync: true,
-            data: IDEIXO,
-            url: 'src/eixo/model/view-eixo.php',
+            data: IDTIPO_USUARIO,
+            url: 'src/tipo-usuario/model/view-tipo.php',
             success: function(dado) {
                 if (dado.tipo == "success") {
-                    $('.modal-body').load('src/eixo/view/form-eixo.html', function() {
-                        $('#NOME').val(dado.dados.NOME)
-                        $('#IDEIXO').val(dado.dados.IDEIXO)
+                    $('.modal-body').load('src/tipo-usuario/view/form-tipo.html', function() {
+                        $('#DESCRICAO').val(dado.dados.DESCRICAO)
+                        $('#DESCRICAO').attr('readonly', 'true')
                     })
-                    $('.btn-save').show()
-                    $('.btn-save').removeAttr('data-operation')
-                    $('#modal-eixo').modal('show')
+                    $('.btn-save').hide()
+                    $('#modal-tipo').modal('show')
                 } else {
                     Swal.fire({ // Inicialização do SweetAlert
                         title: 'Library', // Título da janela SweetAler
